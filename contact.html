@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+		<title>Contact Us | Privé Drive</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+		<link rel="stylesheet" href="../css/contact.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../css/partials/header.css" />
+	</head>
+	<body>
+		<nav class="navbar ref-line">
+			<img class="logo ref-line" src="../assets/Privewhite.svg" alt="Privé Drive Logo" />
+			<ul class="nav-links hidden-navbar ref-line">
+				<li><a href="/">Home</a></li>
+				<li><a href="/cars">Cars</a></li>
+				<li><a href="/compare">Compare</a></li>
+				<li><a href="/memberships">Memberships</a></li>
+				<li><a href="/book">Book Now</a></li>
+				<li><a href="/contact">Contact Us</a></li>
+			</ul>
+			<img src="assets/menu.png" id="menu-btn" alt="Menu" />
+		</nav>
+
+		<script>
+			document.getElementById('menu-btn').addEventListener('click', () => {
+				document.querySelector('.nav-links').classList.toggle('hidden-navbar')
+			})
+			
+			var currentPath = window.location.pathname;
+
+			const navLinks = document.querySelectorAll('nav ul li a')
+			navLinks.forEach((link) => {
+				let linkPath = link.getAttribute('href')
+
+				if (linkPath === currentPath) {
+					link.style.color = '#ecff82'
+					// link.style.fontWeight = 'bold'
+					// link.parentElement.style.borderBottom = '3px #ecff82 solid'
+				}
+				})
+
+		</script>
+	</body>
+</html>
+
+
+		<section class="contact-details-section ref-line">
+			<h3>Contact Us</h3>
+			<div class="outer-div ref-line">
+				<div class="inner-div ref-line">
+					<div class="ref-line">
+						<img src="../assets/contactLocation.png" alt="" />
+						<strong>Address:</strong>
+					</div>
+					<p>Mantri Residency, Bannerghatta Road, Bangalore 560076</p>
+				</div>
+				<div class="inner-div ref-line">
+					<div class="ref-line">
+						<img src="../assets/Email.png" alt="" />
+						<strong>Email:</strong>
+					</div>
+					<p>response@dieselry.com</p>
+				</div>
+				<div class="inner-div ref-line">
+					<div class="ref-line">
+						<img src="../assets/Mobile phone.png" alt="" />
+						<strong>Mobile No. :</strong>
+					</div>
+					<p>+91-9606996321</p>
+				</div>
+			</div>
+
+			<div class="contact-buttons ref-line">
+				<button class="whatsapp-button"><i class="fab fa-whatsapp"></i>Chat</button>
+				<button class="call-button"><i class="fa-solid fa-phone"></i>Call</button>
+				<button class="mail-button"><i class="fa-solid fa-envelope"></i>Email</button>
+			</div>
+		</section>
+
+		<!-- <section class="map-section">
+			<img src="../assets/map.png" alt="" />
+		</section> -->
+
+		<section class="contact-us-section">
+			<h3>Reach Out To Us</h3>
+			<form>
+				<input type="text" name="name" id="name" placeholder="Your Name" minlength="3" maxlength="50" required />
+				<input type="email" name="email" id="email" placeholder="Enter Your Email" required />
+				<input
+					type="tel"
+					name="phone"
+					id="phone"
+					placeholder="Phone Number"
+					title="'Please Enter 10 Digit Mobile Number"
+					minlength="10"
+					maxlength="10"
+					required />
+				<input type="text" name="city" id="city" placeholder="Enter Your City" minlength="3" maxlength="25" required />
+				<textarea name="message" id="message" placeholder="Enter Your Message" required></textarea>
+				<button type="submit" class="reach-out-btn id="submitBtn">Send Message</button>
+			</form>
+		</section>
+
+		<div class="thanks-4-contacting">
+			<img src="../assets/thankyou.png" alt="">
+		</div>
+
+		<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../css/partials/footer.css" />
+	</head>
+	<body>
+		<footer class="footer-links">
+			<div>
+				<img src="../assets/Privewhite.svg" alt="" />
+			</div>
+			<div class="quick-links-div">
+				<span>Quick Links</span>
+				<ul>
+					<li class="explore-cars-link">Explore Cars</li>
+					<li class="memberships-link">Memberships</li>
+					<li class="book-now-link">Book Now</li>
+					<li class="compare-now-link">Compare</li>
+					<li class="contact-us-link">Contact Us</li>
+					<li class="faqs-link">FAQ's</li>
+					<li class="privacy-policy-link">Privacy Policy</li>
+					<li class="terms-and-conditions-link">Terms & Conditions</li>
+				</ul>
+			</div>
+			<div class="working-time">
+				<span>Working Hours</span>
+				<p>10AM to 6PM</p>
+				<p>MONDAY TO SATURDAY</p>
+			</div>
+		</footer>
+		<div class="reserved-rights">
+			<p>2025. All Rights Reserved</p>
+		</div>
+		<div class="whatsapp-div">
+			<img src="../assets/whatsapp.png" class="whatsapp-icon" alt="" />
+		</div>
+
+		<script>
+			document.getElementsByClassName('explore-cars-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/cars'
+			})
+
+			document.getElementsByClassName('memberships-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/memberships'
+			})
+
+			document.getElementsByClassName('book-now-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/book'
+			})
+
+			document.getElementsByClassName('compare-now-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/compare'
+			})
+
+			document.getElementsByClassName('contact-us-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/contact'
+			})
+
+			document.getElementsByClassName('faqs-link')[0].addEventListener('click', (e) => {
+				const path = window.location.pathname
+				if (path === '/') {
+					document.getElementsByClassName('faq-section')[0].scrollIntoView({behavior: 'smooth'})
+				} else {
+					window.location.href = '/#faq'
+				}
+			})
+
+			document.getElementsByClassName('privacy-policy-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/privacy-policy'
+			})
+
+			document.getElementsByClassName('terms-and-conditions-link')[0].addEventListener('click', (e) => {
+				window.location.href = '/terms-and-conditions'
+			})
+
+			document.querySelector('.whatsapp-div').addEventListener('click', () => {
+				window.location.href = 'https://wa.me/+919606996321' // Replace with your desired link
+			})
+		</script>
+	</body>
+</html>
+
+
+		<script>
+			document.querySelector('.whatsapp-button').addEventListener('click', () => {
+				window.location.href = 'https://wa.me/+919606996321'
+			})
+
+			document.querySelector('.call-button').addEventListener('click', () => {
+				window.location.href = 'tel:+919606996321'
+			})
+
+			document.querySelector('.mail-button').addEventListener('click', () => {
+				window.location.href = 'mailto:response@dieselry.com'
+			})
+		</script>
+		<script src="../js/reachOut.js"></script>
+	</body>
+</html>
+
+
+<!-- Delete below code after testnig later -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriveDrive Payment Testing</title>
+</head>
+<body>
+	<h1>Razorpay Payment Integration</h1>
+    	<a href="https://razorpay.me/@dieselrysolutionsprivatelimit" target="_blank">
+		<button>Pay with Razorpay</button> </a>
+</body>
+</html>
